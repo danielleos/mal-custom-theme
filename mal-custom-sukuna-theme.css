@@ -370,10 +370,6 @@ div.icon-watch2,
   align-items: center;
 }
 
-.icon-watch2 {
-  display: none !important;
-}
-
 .list-table .list-table-data .data.title .link {
   font-size: 1em;
   line-height: 1em;
