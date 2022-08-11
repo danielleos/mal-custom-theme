@@ -81,11 +81,18 @@ body {
   transition: all .5s ease-in-out;
 }
 
+/* Hide stuff */
 .header .header-title,
 .header .header-menu,
 .header .header-info,
 #header-menu-button, [data-owner=''] .list-menu-float,
-.icon-menu:not(.profile),
+.icon-menu.anime-list,
+.icon-menu.manga-list,
+.icon-menu.history,
+.icon-menu.export,
+.icon-menu.logout,
+.icon-menu.setting,
+.icon-menu:not(.profile):hover .text,
 .cover-block,
 #cover-image-container,
 .status-menu-container .status-menu .status-button::after,
@@ -94,6 +101,7 @@ body {
 .list-table .list-table-header .header-title.image,
 .list-table .list-table-data .data.image,
 .icon-watch.ml4,
+div.icon-watch2,
 .more,
 .list-table .list-table-data .tags .edit {
   display: none;
@@ -155,6 +163,30 @@ body {
   overflow: hidden;
 }
 
+.list-menu-float .icon-menu.quick-add {
+  display: unset;
+  position: absolute;
+  background-color: unset;
+}
+
+.list-menu-float .icon-menu:not(.profile):hover {
+  background-color: unset;
+  width: unset;
+}
+
+.list-menu-float .icon-menu.quick-add svg.icon-quick-add {
+  display: unset;
+  top: 7px;
+}
+
+.list-menu-float .icon-menu.quick-add svg.icon {
+  fill: rgb(128, 128, 128);
+}
+
+.list-menu-float .icon-menu.quick-add svg.icon:hover {
+  fill: #fff;
+}
+
 .icon-menu.profile:hover:after,
 .header a:hover,
 .list-table .list-table-data a:not(.edit-disabled):hover,
@@ -195,7 +227,8 @@ body {
   transition: all .2s ease-in-out;
 }
 
-.status-menu-container .status-menu .status-button.on {order: 1;
+.status-menu-container .status-menu .status-button.on {
+  order: 1;
   background: rgba(92,99,145,.2);
   color: #e8e8e8!important;
   padding: 10px;
