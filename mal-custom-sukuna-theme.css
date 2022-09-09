@@ -376,7 +376,7 @@ div.icon-watch2,
   color: white!important;
   font-weight: normal!important;
   display: inline-block;
-  max-width: 270px;
+  max-width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -384,10 +384,11 @@ div.icon-watch2,
 
 .content-status {
   background: rgba(0,0,0,.2);
-  padding: 1px 0 2px 4px;
+  padding: 2px 4px;
   border-radius: 10px;
   position: relative;
-  top: -1px;
+  top: 0px;
+  margin-left: 4px;
 }
 
 .list-table .list-table-data .data.title .add-edit-more {
