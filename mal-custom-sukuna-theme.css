@@ -81,32 +81,6 @@ body {
   transition: all .5s ease-in-out;
 }
 
-/* Hide stuff */
-.header .header-title,
-.header .header-menu,
-.header .header-info,
-#header-menu-button, [data-owner=''] .list-menu-float,
-.icon-menu.anime-list,
-.icon-menu.manga-list,
-.icon-menu.history,
-.icon-menu.export,
-.icon-menu.logout,
-.icon-menu.setting,
-.icon-menu:not(.profile):hover .text,
-.cover-block,
-#cover-image-container,
-.status-menu-container .status-menu .status-button::after,
-.status-menu-container .search-container,
-.list-unit .list-status-title .stats,
-.list-table .list-table-header .header-title.image,
-.list-table .list-table-data .data.image,
-.icon-watch.ml4,
-.icon-watch2,
-.more,
-.list-table .list-table-data .tags .edit {
-  display: none;
-}
-
 .header {
   position: fixed;
   width: 300px;
@@ -425,4 +399,30 @@ body {
 #recaptcha-terms {
   font: 8px 'Space Mono';
   color: rgb(106 100 155 / 60%);
+}
+
+/* Hide stuff */
+.header .header-title,
+.header .header-menu,
+.header .header-info,
+#header-menu-button, [data-owner=''] .list-menu-float,
+.icon-menu.anime-list,
+.icon-menu.manga-list,
+.icon-menu.history,
+.icon-menu.export,
+.icon-menu.logout,
+.icon-menu.setting,
+.icon-menu:not(.profile):hover .text,
+.cover-block,
+#cover-image-container,
+.status-menu-container .status-menu .status-button::after,
+.status-menu-container .search-container,
+.list-unit .list-status-title .stats,
+.list-table .list-table-header .header-title.image,
+.list-table .list-table-data .data.image,
+.icon-watch.ml4,
+.icon-watch2,
+.more,
+.list-table .list-table-data .tags .edit {
+  display: none !important;
 }
